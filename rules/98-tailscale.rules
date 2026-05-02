@@ -1,3 +1,6 @@
+# loop0 is used as a boot trigger because Kobo has no init hook we can register
+# against, and loop0 reliably appears late enough in boot that /mnt/onboard is
+# (or is about to be) mounted, which is what tailscaled's --statedir requires.
 KERNEL=="loop0", RUN+="/bin/sh -c '/usr/local/tailscale/boot.sh'"
 KERNEL=="wlan*", ACTION=="add", RUN+="/bin/sh -c '/usr/local/tailscale/on-wlan-up.sh'"
 KERNEL=="wlan*", ACTION=="remove", RUN+="/bin/sh -c '/usr/local/tailscale/on-wlan-down.sh'"
