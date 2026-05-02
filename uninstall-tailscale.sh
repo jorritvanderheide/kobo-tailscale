@@ -25,6 +25,6 @@ echo "Removing tailscale boot and load scripts from /usr/local/tailscale ..."
 rm -rf /usr/local/tailscale
 
 echo "Removing tailscale udev rule from /etc/udev/rules.d ..."
-rm -f /etc/udev/rules.d/99-tailscale.rules
+rm -f /etc/udev/rules.d/98-tailscale.rules
 
 echo "Uninstallation complete!"
