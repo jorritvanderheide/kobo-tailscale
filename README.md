@@ -40,5 +40,7 @@ If you want MagicDNS, edit `scripts/on-wlan-up.sh` and remove the `--accept-dns=
 ## Acknowledgements
 
 [Dylan Staley for initial work and scripts on the Kobo Sage](https://dstaley.com/posts/tailscale-on-kobo-sage)
+
 [jmacindoe for documenting kernel module compilation on Kobo readers](https://github.com/jmacindoe/kobo-kernel-modules)
+
 [videah for the install scripts](https://github.com/videah/kobo-tailscale)
